@@ -45,13 +45,13 @@
     position: relative;
 }
 
-/*.bubble-layer {*/
-/*    position: absolute;*/
-/*    inset: -300px;*/
-/*    z-index: 1;*/
-/*    overflow: visible;*/
-/*    pointer-events: none;*/
-/*}*/
+.bubble-layer {
+    position: absolute;
+    inset: -300px;
+    z-index: 1;
+    overflow: visible;
+    pointer-events: none;
+}
 
 .hero-orb {
     width: 100%;
@@ -70,20 +70,20 @@
         0 0 70px rgba(139, 54, 246, 0.25);
 }
 
-/*.orb-bubble {*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    z-index: 1;*/
-/*    width: var(--bubble-size);*/
-/*    height: var(--bubble-size);*/
-/*    border-radius: 50%;*/
-/*    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.55), rgba(47, 140, 255, 0.5), rgba(181, 34, 242, 0.25));*/
-/*    border: 1px solid rgba(143, 174, 255, 0.7);*/
-/*    box-shadow: 0 0 22px rgba(82, 116, 255, 0.55);*/
-/*    pointer-events: none;*/
-/*    animation: bubbleMove var(--bubble-speed) ease-out forwards;*/
-/*}*/
+.orb-bubble {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: var(--bubble-size);
+    height: var(--bubble-size);
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.55), rgba(47, 140, 255, 0.5), rgba(181, 34, 242, 0.25));
+    border: 1px solid rgba(143, 174, 255, 0.7);
+    box-shadow: 0 0 22px rgba(82, 116, 255, 0.55);
+    pointer-events: none;
+    animation: bubbleMove var(--bubble-speed) ease-out forwards;
+}
 
 .hero-orb::before,
 .hero-orb::after {
@@ -114,22 +114,22 @@
     pointer-events: none;
 }
 
-/*@keyframes bubbleMove {*/
-/*    0% {*/
-/*        opacity: 0;*/
-/*        transform: translate(-50%, -50%) scale(0.2);*/
-/*    }*/
+@keyframes bubbleMove {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.2);
+    }
 
-/*    25% {*/
-/*        opacity: 0.75;*/
-/*    }*/
+    25% {
+        opacity: 0.75;
+    }
 
-/*    70% {*/
-/*        opacity: 0.55;*/
-/*    }*/
+    70% {
+        opacity: 0.55;
+    }
 
-/*    100% {*/
-/*        opacity: 0;*/
-/*        transform: translate(calc(-50% + var(--move-x)), calc(-50% + var(--move-y))) scale(1.15);*/
-/*    }*/
-/*}*/
+    100% {
+        opacity: 0;
+        transform: translate(calc(-50% + var(--move-x)), calc(-50% + var(--move-y))) scale(1.15);
+    }
+}

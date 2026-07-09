@@ -24,34 +24,34 @@ if ("IntersectionObserver" in window) {
         section.classList.add("show");
     });
 }
-//
-// function createBubble() {
-//     if (!bubbleLayer) {
-//         return;
-//     }
-//
-//     const bubble = document.createElement("span");
-//     const size = Math.floor(Math.random() * 45) + 24;
-//     const angle = Math.random() * Math.PI * 2;
-//     const distance = Math.floor(Math.random() * 120) + 150;
-//     const moveX = Math.cos(angle) * distance;
-//     const moveY = Math.sin(angle) * distance;
-//     const speed = Math.floor(Math.random() * 4) + 7;
-//
-//     bubble.classList.add("orb-bubble");
-//     bubble.style.setProperty("--bubble-size", `${size}px`);
-//     bubble.style.setProperty("--move-x", `${moveX}px`);
-//     bubble.style.setProperty("--move-y", `${moveY}px`);
-//     bubble.style.setProperty("--bubble-speed", `${speed}s`);
-//
-//     bubbleLayer.appendChild(bubble);
-//
-//     setTimeout(() => {
-//         bubble.remove();
-//     }, speed * 1000);
-// }
-//
-// createBubble();
-// createBubble();
-// createBubble();
-// setInterval(createBubble, 550);
+
+function createBubble() {
+    if (!bubbleLayer) {
+        return;
+    }
+
+    const bubble = document.createElement("span");
+    const size = Math.floor(Math.random() * 55) + 40;
+    const angle = Math.random() * Math.PI * 2;
+    const distance = Math.floor(Math.random() * 250) + 250;
+    const moveX = Math.cos(angle) * distance;
+    const moveY = Math.sin(angle) * distance;
+    const speed = Math.floor(Math.random() * 15) +  5;
+
+    bubble.classList.add("orb-bubble");
+    bubble.style.setProperty("--bubble-size", `${size}px`);
+    bubble.style.setProperty("--move-x", `${moveX}px`);
+    bubble.style.setProperty("--move-y", `${moveY}px`);
+    bubble.style.setProperty("--bubble-speed", `${speed}s`);
+
+    bubbleLayer.appendChild(bubble);
+
+    setTimeout(() => {
+        bubble.remove();
+    }, speed * 1000);
+}
+
+createBubble();
+createBubble();
+createBubble();
+setInterval(createBubble, 800);
