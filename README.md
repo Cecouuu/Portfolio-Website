@@ -7,7 +7,7 @@
 
 A personal portfolio website showcasing my skills, projects and interest in web development.
 
-## 📖 About the Project
+## 📖 About the Projects
 
 This website was created to present my technical skills, personal projects and learning journey as an aspiring web developer. It serves as a central place where visitors can learn more about me, explore my projects and find contact information.
 
